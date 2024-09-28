@@ -1,0 +1,144 @@
+/* Full-page styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  overflow: hidden;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Stars */
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.star:nth-child(1) { left: 10%; animation-duration: 5s; animation-delay: 1s; }
+.star:nth-child(2) { left: 30%; animation-duration: 6s; animation-delay: 2s; }
+.star:nth-child(3) { left: 50%; animation-duration: 7s; animation-delay: 3s; }
+.star:nth-child(4) { left: 70%; animation-duration: 8s; animation-delay: 4s; }
+.star:nth-child(5) { left: 90%; animation-duration: 5.5s; animation-delay: 1.5s; }
+.star:nth-child(6) { left: 15%; animation-duration: 4.5s; animation-delay: 2s; }
+.star:nth-child(7) { left: 25%; animation-duration: 7.5s; animation-delay: 1.2s; }
+.star:nth-child(8) { left: 40%; animation-duration: 9s; animation-delay: 3.5s; }
+.star:nth-child(9) { left: 60%; animation-duration: 6.5s; animation-delay: 2.5s; }
+.star:nth-child(10) { left: 80%; animation-duration: 7s; animation-delay: 2.8s; }
+
+/* Login card styling */
+.card {
+  background: rgb(228, 251, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: #112943;
+  color: white;
+  border-bottom: none;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.input-group .form-control {
+  border: 1px solid #112943;
+}
+
+.input-group .input-group-text {
+  background: #112943;
+  border: none;
+  color: white;
+}
+
+/* Button styling */
+.btn-primary {
+  background: linear-gradient(90deg, #0a1520 0%, #0e2229 100%);
+  border: none;
+  box-shadow: 0 4px 15px rgba(30, 144, 255, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #00bfff 0%, #1e90ff 100%);
+  box-shadow: 0 6px 20px rgba(0, 191, 255, 0.6);
+}
+
+/* Add animations to text */
+.login-box-msg {
+  color: #0d1d31;
+  font-weight: bold;
+  font-size: 1.1rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
+
+/* Utility classes */
+.w-4 { width: 1rem; }
+.h-4 { height: 1rem; }
+
+.w-6 { width: 1.5rem; }
+.h-6 { height: 1.5rem; }
+
+.dropzone {
+  background: white;
+  border-radius: 5px;
+  border: 2px dashed rgb(1, 6, 8);
+  border-image: none;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image-container img {
+  width: 58px;
+  height: 58px;
+}
+
+.image-container p {
+  font-size: 9px;
+  color: #999999;
+}

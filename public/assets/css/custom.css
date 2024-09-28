@@ -1,0 +1,35 @@
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+    width: 300px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-out, right 0.3s ease-out;
+}
+
+.alert-dismissible .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+}
+
+.alert.hidden {
+    right: -400px;
+    opacity: 0;
+}
+.loading-bar {
+position: fixed;
+top: 0;
+left: 0;
+width: 0%;
+height: 4px;
+background-color: #3498db; 
+z-index: 1100;
+transition: width 0.3s ease;
+}
+
+.loading-bar.active {
+width: 100%;
+}
