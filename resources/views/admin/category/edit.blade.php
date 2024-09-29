@@ -6,7 +6,7 @@
     <div class="container-fluid my-2">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>Create Category</h1>
+                <h1>Edit Category</h1>
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
                         <!-- Image Upload Section -->
                         <div class="col-md-6">
                             <div class="d-flex align-items-center">
-                                <!-- <input type="text" name="image_id" id="image_id" value=""> -->
+                                <input type="text" name="image_id" id="image_id" value="">
                                 <label for="image" class="me-3">Image</label>
                                 <div id="image" class="dropzone dz-clickable border border-secondary rounded flex-grow-1">
                                     <div class="dz-message text-center py-5">

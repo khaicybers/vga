@@ -49,6 +49,7 @@ Route::get('/', function () {
         
         Route::get('/categories/create', [CategoryController::class, 'create'])->name('categories.create');
         Route::post('/categories', [CategoryController::class, 'store'])->name('categories.store');
+        Route::get('/categories/{category}/edit', [CategoryController::class, 'edit'])->name('categories.edit');
 
 
 
@@ -68,9 +69,6 @@ Route::get('/', function () {
 
     });
 
-
-
-    // Route::get('/user-count', [UserController::class, 'backend/getUserCount']);
     
 
 

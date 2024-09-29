@@ -112,13 +112,13 @@
                 <div class="collapse" id="sidebarLayouts">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="{{ route('categories.create')}}">
-                        <span class="sub-item">New Category</span>
+                      <a href="{{ route('categories.index')}}">
+                        <span class="sub-item">Categories</span>
                       </a>
                     </li>
                     <li>
-                      <a href="icon-menu.html">
-                        <span class="sub-item">Icon Menu</span>
+                      <a href="{{ route('categories.create')}}">
+                        <span class="sub-item">New Category</span>
                       </a>
                     </li>
                   </ul>
@@ -272,3 +272,4 @@
           </div>
         </div>
       </div>
+    
